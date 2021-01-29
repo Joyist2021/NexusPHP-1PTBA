@@ -153,9 +153,52 @@ else {
 					default: break;
 				}
 			}
-		}
-		print("<td class=\"embedded\"><form method=\"get\" action=\"http://shooter.cn/sub/\" target=\"_blank\"><input type=\"text\" name=\"searchword\" id=\"keyword\" style=\"width: 250px\" value=\"".$moviename."\" /><input type=\"submit\" value=\"".$lang_details['submit_search_at_shooter']."\" /></form></td><td class=\"embedded\"><form method=\"get\" action=\"http://www.opensubtitles.org/en/search2/\" target=\"_blank\"><input type=\"hidden\" id=\"moviename\" name=\"MovieName\" /><input type=\"hidden\" name=\"action\" value=\"search\" /><input type=\"hidden\" name=\"SubLanguageID\" value=\"all\" /><input onclick=\"document.getElementById('moviename').value=document.getElementById('keyword').value;\" type=\"submit\" value=\"".$lang_details['submit_search_at_opensubtitles']."\" /></form></td>\n");
-		print("</tr></table>");
+		}  //修复插入更多字幕搜索项目 开始
+		print("<script>
+			function searchsubhd() {
+				var a = document.getElementById(\'keyword\').value;
+				$(\"#subhd\").attr(\"action\", \"http://subhd.com/search/\" + a);
+				return true;
+			}
+		</script>        
+        <td class=\"embedded\">
+		<form method=\"get\" action=\"http://sub.makedie.me/sub/\" target=\"_blank\">
+		<input type=\"text\" name=\"searchword\" id=\"keyword\" style=\"width: 180px\" value=\"".$moviename."\" />
+		<input type=\"submit\" value=\"".$lang_details['submit_search_at_shooter']."\" />
+		</form>
+		<td class=\"embedded\">
+		<form method=\"get\" action=\"http://www.zimuzu.tv/search\" target=\"_blank\">
+		<input type=\"hidden\" name=\"keyword\" id=\"moviename\" />
+		<input type=\"hidden\" name=\"type\" value = \"subtitle\">
+		<input type=\"hidden\" name=\"order\" value = \"uptime\">
+		<input onclick=\"document.getElementById('moviename').value=document.getElementById('keyword').value;\" type=\"submit\" value=\"搜索人人影视\" />
+		</form>
+		</td>
+		<td class=\"embedded\">
+		<form method=\"get\" action=\"http://www.zimuku.net/search\" target=\"_blank\">
+		<input type=\"hidden\" name=\"q\" id=\"movienames\" />
+		<input onclick=\"document.getElementById('movienames').value=document.getElementById('keyword').value;\" type=\"submit\" value=\"搜索字幕库\" />
+		</form>
+		</td>
+		<td class=\"embedded\">
+		<form id=\"subhd\" method=\"get\" action=\"http://subhd.com/search/\" target=\"_blank\" onsubmit=\"searchsubhd()\">
+		<input type=\"submit\" value=\"搜索SubHD\" />
+		</form>
+		</td>
+		<td class=\"embedded\">
+		<form method=\"get\" action=\"http://r3sub.com/search.php\" target=\"_blank\">
+		<input type=\"hidden\" name=\"s\" id=\"movienamess\" />
+		<input onclick=\"document.getElementById('movienamess').value=document.getElementById('keyword').value;\" type=\"submit\" value=\"搜索R3SUB\" />
+		</form>
+		</td>
+		<td class=\"embedded\">
+		<form method=\"get\" action=\"http://subscene.com/subtitles/release\" target=\"_blank\">
+		<input type=\"hidden\" name=\"q\" id=\"moviename\" />
+		<input type=\"hidden\" name=\"r\" value = \"true\">
+		<input onclick=\"document.getElementById('moviename').value=document.getElementById('keyword').value;\" type=\"submit\" value=\"搜索SubScene\" />
+		</form>
+		</td>\n");  //修复插入更多字幕搜索项目 结束
+  		print("</tr></table>");
 		print("</td></tr>\n");
 		// ---------------- end subtitle block -------------------//
 
