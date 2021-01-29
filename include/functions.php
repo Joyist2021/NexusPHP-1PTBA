@@ -2401,13 +2401,16 @@ else {
 	</span></td>
 	</tr></table></td>
 </tr></table>
-
 </td></tr>
-
 <tr><td id="outer" align="center" class="outer" style="padding-top: 20px; padding-bottom: 20px">
-<!--- <font size="4"><span style="color: Red;"><b>本站禁发影视版权保护热播剧《庆余年》</b></span></font><br /> --->
 <div class="single-top-html"><style>#nr{font-size:20px;margin:0;background:-webkit-linear-gradient(left,#fff,#f00 6.25%,#ff7d00 12.5%,#ff0 18.75%,#0f0 25%,#0ff 31.25%,#00f 37.5%,#f0f 43.75%,#ff0 50%,#f00 56.25%,#ff7d00 62.5%,#ff0 68.75%,#0f0 75%,#0ff 81.25%,#00f 87.5%,#f0f 93.75%,#ff0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:200% 100%;animation:masked-animation 2s infinite linear}@keyframes masked-animation{0%{background-position:0 0}100%{background-position:-100%,0}}</style><div style="background-color:#333;border-radius:25px;box-shadow:0px 0px 5px #f200ff;padding:5px;margin-top:10px;margin-bottom:0px;"><marquee><b id="nr">公告：欢迎来到1PTBA！本站资源全部非盈利下载，请保持了良好的分享率，一旦低于0.2将被禁用（vip例外） 长期招募字幕组，压制人员及diy爱好者,发布员 </b></marquee></div></div>
+<div align="center" style="margin-bottom: 10px" id="ad_belownav"><font size="4"><span style="color: DarkRed;"><b><a href="adredir.php?id=47&amp;url=https%3A%2F%2Ft.me%2F" target="_blank">电报TG群: https://t.me/</a></b><b> Q群：939289463</b></font><br />
+<br />
+ <font size="5"><b><a href="adredir.php?id=47&amp;url=forums.php%3Faction%3Dviewforum%26amp%3Bforumid%3D5" target="_blank">招募字幕制作，原盘DIY制作！</a></b></span></font><br />
+ <font size="5"><b>本站三个月不登录将封禁，魔力值可通过做种获得，我为人人，人人为我。</b></font><br />
+ <!--- <font size="4"><span style="color: Red;"><b>本站禁发影视版权保护热播剧《庆余年》</b></span></font><br /> --->
 <font size="3"><span style="color: Red;"><b><a href="forums.php?action=viewtopic&topicid=4726">1PTBA种下载规则和带H&R标记的种子说明</a></b></span></font>
+ </div>
 <?php
 	if ($Advertisement->enable_ad()){
 			$belownavad=$Advertisement->get_ad('belownav');
