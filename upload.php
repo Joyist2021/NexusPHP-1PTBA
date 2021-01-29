@@ -39,6 +39,7 @@ stdhead($lang_upload['head_upload']);
 				<tr>
 					<td class='colhead' colspan='2' align='center'>
 						<?php echo $lang_upload['text_tracker_url'] ?>: &nbsp;&nbsp;&nbsp;&nbsp;<b><?php echo  get_protocol_prefix() . $announce_urls[0]?></b>
+						<div class="colhead" style="color:black;font:bold;">首次发种请前往<a href='forums.php?action=viewtopic&topicid=2' style="color:green;">新手发种学习区</a>查看后发种</div>
 						<?php
 						if(!is_writable($torrent_dir))
 						print("<br /><br /><b>ATTENTION</b>: Torrent directory isn't writable. Please contact the administrator about this problem!");
