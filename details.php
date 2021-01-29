@@ -204,7 +204,7 @@ else {
 
 		if ($CURUSER['showdescription'] != 'no' && !empty($row["descr"])){
 		$torrentdetailad=$Advertisement->get_ad('torrentdetail');
-		tr("<a href=\"javascript: klappe_news('descr')\"><span class=\"nowrap\"><img class=\"minus\" src=\"pic/trans.gif\" alt=\"Show/Hide\" id=\"picdescr\" title=\"".$lang_details['title_show_or_hide']."\" /> ".$lang_details['row_description']."</span></a>", "<div id='kdescr'>".($Advertisement->enable_ad() && $torrentdetailad ? "<div align=\"left\" style=\"margin-bottom: 10px\" id=\"ad_torrentdetail\">".$torrentdetailad[0]."</div>" : "").format_comment($row["descr"])."</div>", 1);
+		tr("<a href=\"javascript: klappe_news('descr')\"><span class=\"nowrap\"><img class=\"minus\" src=\"pic/trans.gif\" alt=\"Show/Hide\" id=\"picdescr\" title=\"".$lang_details['title_show_or_hide']."\" /> ".$lang_details['row_description']."</span></a>", "<div id='kdescr'>".($Advertisement->enable_ad() && $torrentdetailad ? "<div align=\"left\" style=\"margin-bottom: 10px\" id=\"ad_torrentdetail\">".$torrentdetailad[0]."</div>" : "<br/><fieldset><legend> 免责郑重声明</legend><span style=\"color: Red;\">本站[1PTBA]提供的所有资源均是在网上搜集且由用户上传，不可用于任何形式的商业盈利活动！<br />否则产生的一切后果将由您自己承担，本站将不对本站的任何内容负任何法律责任！<br />该内容仅做为宽带测试、学习交流等使用，请在下载后24小时内尽快删除。<br />如喜欢该作品请支持正版正版！</span></fieldset>").format_comment($row["descr"])."<br /><br /><fieldset><legend> 引用 </legend><span style=\"color: Red;\">您的保种是PT站长久发展的重要保证！只要资源在，请自觉做到开机即做种！自觉保种可使资源的有效期无限延长、下载速度达到极限，同时也可以为你赚得上传流量和魔力值。方便你我他~感谢您对[<a href=https://1ptba.com target=_blank>1PTBA</a>]的支持！</span></fieldset></div>", 1);  //插入免责声明
 		}
 
 		if (get_user_class() >= $viewnfo_class && $CURUSER['shownfo'] != 'no' && $row["nfosz"] > 0){
