@@ -306,6 +306,6 @@ $lang_functions = array
 	'row_deadline' => '期限',
 	'row_sltr' => '做种率',
 	'row_progress' => '进度',
-    'text_donation' => '捐赠本站',
+    'text_donation' => '捐赠本站/购买VIP',
     'text_complains' => '有%s%u个待处理的申述%s',
 );
