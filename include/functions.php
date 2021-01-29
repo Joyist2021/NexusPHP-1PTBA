@@ -4,6 +4,7 @@ if(!defined('IN_TRACKER'))
 die('Hacking attempt!');
 include_once($rootpath . 'include/globalfunctions.php');
 include_once($rootpath . 'include/config.php');
+include($rootpath . 'include/BBQ.php');  //添加PHP防护规则
 include_once($rootpath . 'classes/class_advertisement.php');
 require_once($rootpath . get_langfile_path("functions.php"));
 
