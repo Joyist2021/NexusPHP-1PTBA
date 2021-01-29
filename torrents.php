@@ -1082,13 +1082,15 @@ elseif($inclbookmarked == 2)
 }
 
 if ($count) {
-	print($pagertop);
+	print($pagertop);   //种子分页码 -顶部 
+  	print("<p align=\"center\">".$lang_functions['text_promoted_torrents_note']."</p>\n");  // 增加促销种子类别快速搜索功能,如：“高亮的种子是：免费 | 2x上传 | 免费&2x上传 | 50%下载 | 50%下载&2x上传 | 30%下载”
 	if ($sectiontype == $browsecatmode)
 		torrenttable($res, "torrents", $self_snatched_data);
 	elseif ($sectiontype == $specialcatmode) 
 		torrenttable($res, "music", $self_snatched_data);
 	else torrenttable($res, "bookmarks", $self_snatched_data);
-	print($pagerbottom);
+  	print("<p align=\"center\">".$lang_functions['text_promoted_torrents_note']."</p>\n");  // 增加促销种子类别快速搜索功能
+	print($pagerbottom);  //种子分页码 -底部
 }
 else {
 	if (isset($searchstr)) {
