@@ -15,7 +15,7 @@ $lang_upload = array
 	'text_small_description_note' => "(将在种子页面种子标题下显示。如<i>720p @ 4615 kbps - DTS 5.1 @ 1536 kbps</i>)",
 	'row_nfo_file' => "NFO文件",
 	'text_only_viewed_by' => "(不允许",
-	'text_or_above' => "以下用户查看。请上传<b>.nfo</b>文件)\n",
+	'text_or_above' => "以下用户查看。请上传<b>.nfo</b>文件)\n ——\n  </br></br>①、请使用豆瓣：[<a target=\"_blank\" href=\"https://api.rhilip.info/ptgen.html\"><b class=PowerUser_Name>电影信息生成</b></a>]，查询影介，复制进发布栏中。  </br>②、上传海报、剧照图片，请使用高速[<a target=\"_blank\" href=\"https://sm.ms/\"><b class=PowerUser_Name>sm.ms</b></a>]或[<a target=\"_blank\" href=\"https://imgur.com\"><b class=PowerUser_Name>imgur</b></a>]在线图床，复制链接后粘贴到发布栏中。",
 	'row_description' => "简介",
 	'select_choose_one' => "请选择",
 	'row_type' => "类型",
