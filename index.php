@@ -615,7 +615,8 @@ if ($showtrackerload == "yes" && function_exists('sys_getloadavg')) {
 ?>
 <table width="100%" class="main" border="0" cellspacing="0" cellpadding="0"><tr><td class="embedded">
 <div align="center"><br /><font class="medium"><?php echo $lang_index['text_browser_note'] ?></font></div>
-<div align="center"><a href="http://www.nexusphp.com" title="<?php echo PROJECTNAME?>" target="_blank"><img src="pic/nexus.png" alt="<?php echo PROJECTNAME?>" /></a></div>
+<div align="center"> <!--- <a href="https://1ptba.com" title="<?php echo PROJECTNAME?>" target="_blank"><img src="pic/nexus.png" alt="<?php echo PROJECTNAME?>" /></a> --->
+</div>
 </td></tr></table>
 <?php
 // ------------- end: browser, client and code note ------------------//
