@@ -2065,20 +2065,26 @@ function menu ($selected = "home") {
 		$selected = "staff";
 	}else
 	$selected = "";
+	
+	
+	
 	print ("<div id=\"nav\"><ul id=\"mainmenu\" class=\"menu\">");
 	print ("<li" . ($selected == "home" ? " class=\"selected\"" : "") . "><a href=\"index.php\">" . $lang_functions['text_home'] . "</a></li>");	//首 页
 	if ($enableextforum != 'yes')
 	print ("<li" . ($selected == "forums" ? " class=\"selected\"" : "") . "><a href=\"forums.php\">".$lang_functions['text_forums']."</a></li>");	//论 坛
 	else
 	print ("<li" . ($selected == "forums" ? " class=\"selected\"" : "") . "><a href=\"" . $extforumurl."\" target=\"_blank\">".$lang_functions['text_forums']."</a></li>");  //外部 论 坛
-	print ("<li" . ($selected == "torrents" ? " class=\"selected\"" : "") . "><a href=\"torrents.php\">".$lang_functions['text_torrents']."</a></li>");	//种 子
+	print ("<li" . ($selected == "torrents" ? " class=\"selected\"" : "") . "><a href=\"torrents.php\" rel=\"ddsubmenu1\">".$lang_functions['text_torrents']."</a></li>");	//种 子
+	print ("<li><a href=\"torrents.php?hometeam=1&amp;team19=1&amp;team21=1&amp;team20=1&amp;team22=1&amp;team23=1&amp;team24=1\" rel=\"ddsubmenu2\">&nbsp;官&nbsp;&nbsp;组&nbsp;</a></li>");	//官 组
+	print ("<li><a href=\"torrents.php?cat=408&amp;showmusic=yes\" rel=\"ddsubmenu5\"> 音 &nbsp; 乐</a></li>");	//音 乐
+		
 	if ($enablespecial == 'yes' && can_access_special())
-	printf ('<li%s><a href="%s.php">%s</a></li>', $selected == "special" ? ' class="selected"' : '', SPECIAL_ZONE_FILE, $secondary_zone_name_main);	//特区
+	printf ('<li%s><a href="%s.php" rel=\"ddsubmenu3\">%s</a></li>', $selected == "special" ? ' class="selected"' : '', SPECIAL_ZONE_FILE, $secondary_zone_name_main);	//特区
 	if ($enableoffer == 'yes')
 	print ("<li" . ($selected == "offers" ? " class=\"selected\"" : "") . "><a href=\"offers.php\">".$lang_functions['text_offers']."</a></li>");	//候 选
 	if ($enablerequest == 'yes')  /* */
 	print ("<li" . ($selected == "requests" ? " class=\"selected\"" : "") . "><a href=\"viewrequests.php\">".$lang_functions['text_request']."</a></li>"); 	//求种区
-	print ("<li" . ($selected == "upload" ? " class=\"selected\"" : "") . "><a href=\"upload.php\">".$lang_functions['text_upload']."</a></li>");	//发 布
+	print ("<li" . ($selected == "upload" ? " class=\"selected\"" : "") . "><a href=\"upload.php\" rel=\"ddsubmenu4\">".$lang_functions['text_upload']."</a></li>");	//发 布
 	print ("<li" . ($selected == "subtitles" ? " class=\"selected\"" : "") . "><a href=\"subtitles.php\">".$lang_functions['text_subtitles']."</a></li>");	//字 幕
 	print ("<li" . ($selected == "usercp" ? " class=\"selected\"" : "") . "><a href=\"usercp.php\">".$lang_functions['text_user_cp']."</a></li>");	//控制面板
 	print ("<li" . ($selected == "topten" ? " class=\"selected\"" : "") . "><a href=\"topten.php\">".$lang_functions['text_top_ten']."</a></li>");	//排行榜
@@ -2086,7 +2092,74 @@ function menu ($selected = "home") {
 	print ("<li" . ($selected == "rules" ? " class=\"selected\"" : "") . "><a href=\"rules.php\">".$lang_functions['text_rules']."</a></li>");	//规 则
 	print ("<li" . ($selected == "faq" ? " class=\"selected\"" : "") . "><a href=\"faq.php\">".$lang_functions['text_faq']."</a></li>");	//常见问题
 	print ("<li" . ($selected == "staff" ? " class=\"selected\"" : "") . "><a href=\"staff.php\">".$lang_functions['text_staff']."</a></li>");	//管 理 组
-	print ("</ul></div>");	//查看种子菜单（需要增加）
+	print ("</ul>
+	
+	
+	
+	           <ul id=\"ddsubmenu1\" class=\"ddsubmenustyle\">
+            <li><a href=\"torrents.php\">全&nbsp;&nbsp;部</a></li> 
+            <li><a href=\"torrents.php?cat=401\">电&nbsp;&nbsp;影</a> 
+             <ul>
+              <li><a href=\"javacript:void(0);\">媒&nbsp;&nbsp;介</a> 
+               <ul> 
+                <li><a href=\"/torrents.php?cat401=1&amp;medium12=1&amp;medium13=1&amp;medium1=1&amp;medium14=1&amp;incldead=1&amp;spstate=0&amp;inclbookmarked=0&amp;search=&amp;search_area=0&amp;search_mode=0\">Blu-ray</a></li> 
+                <li><a href=\"/torrents.php?cat401=1&amp;medium3=1&amp;incldead=1&amp;spstate=0&amp;inclbookmarked=0&amp;search=&amp;search_area=0&amp;search_mode=0\">Remux</a></li> 
+                <li><a href=\"/torrents.php?cat401=1&amp;medium5=1&amp;incldead=1&amp;spstate=0&amp;inclbookmarked=0&amp;search=&amp;search_area=0&amp;search_mode=0\">HDTV</a></li> 
+                <li><a href=\"/torrents.php?cat401=1&amp;medium10=1&amp;incldead=1&amp;spstate=0&amp;inclbookmarked=0&amp;search=&amp;search_area=0&amp;search_mode=0\">WEB-DL</a></li> 
+                <li><a href=\"/torrents.php?cat401=1&amp;medium2=1&amp;incldead=1&amp;spstate=0&amp;inclbookmarked=0&amp;search=&amp;search_area=0&amp;search_mode=0\">DVD(原盘)</a></li> 
+               </ul> </li> 
+              <li><a href=\"javacript:void(0);\">分辨率</a> 
+               <ul> 
+                <li><a href=\"/torrents.php?cat401=1&amp;standard5=1&amp;incldead=1&amp;spstate=0&amp;inclbookmarked=0&amp;search=&amp;search_area=0&amp;search_mode=0\">4K</a></li> 
+                <li><a href=\"/torrents.php?cat401=1&amp;standard1=1&amp;standard2=1&amp;incldead=1&amp;spstate=0&amp;inclbookmarked=0&amp;search=&amp;search_area=0&amp;search_mode=0\">1080P</a></li> 
+                <li><a href=\"/torrents.php?cat401=1&amp;standard3=1&amp;incldead=1&amp;spstate=0&amp;inclbookmarked=0&amp;search=&amp;search_area=0&amp;search_mode=0\">720P</a></li> 
+                <li><a href=\"/torrents.php?cat401=1&amp;standard4=1&amp;incldead=1&amp;spstate=0&amp;inclbookmarked=0&amp;search=&amp;search_area=0&amp;search_mode=0\">SD</a> </li> 
+               </ul> </li> 
+             </ul></li>
+            <li><a href=\"torrents.php?cat=402\">电视剧</a></li>
+            <li><a href=\"torrents.php?cat=403\">综&nbsp;&nbsp;艺</a></li>
+            <li><a href=\"torrents.php?cat=404\">纪录片</a></li>
+            <li><a href=\"torrents.php?cat=405\">动&nbsp;&nbsp;漫</a></li>
+            <li><a href=\"torrents.php?cat=408\">音&nbsp;&nbsp;乐</a> 
+             <ul> 
+              <li><a href=\"torrents.php?tag=yzj&amp;showmusic=yes\">音乐专辑</a></li> 
+              <li><a href=\"torrents.php?tag=mv&amp;showmusic=yes\"> M V</a></li> 
+              <li><a href=\"torrents.php?tag=concert&amp;showmusic=yes\">演唱会</a></li> 
+              <!--  <li><a href=torrents.php?tag=ok>卡拉OK</a></li>--> 
+              <li><a href=\"torrents.php?tag=live&amp;showmusic=yes\">现场LIVE</a></li> 
+             </ul></li> 
+            <li><a href=\"torrents.php?cat=407\">体&nbsp;&nbsp;育</a></li>
+            <li><a href=\"torrents.php?cat=411\">游&nbsp;&nbsp;戏</a></li>
+            <li><a href=\"torrents.php?cat=410\">软&nbsp;&nbsp;件</a></li>
+            <li><a href=\"torrents.php?cat=412\">教&nbsp;&nbsp;学</a></li>
+            <li><a href=\"torrents.php?cat=409\">其&nbsp;&nbsp;他</a></li>
+           </ul>
+           <ul id=\"ddsubmenu2\" class=\"ddsubmenustyle\">
+            <li><a href=\"torrents.php?hometeam=1&amp;team19=1&amp;team21=1&amp;team20=1&amp;team22=1\">全&nbsp;&nbsp;部</a></li>
+            <li><a href=\"torrents.php?hometeam=1&amp;team19=1&amp;team21=1&amp;team20=1&amp;team22=1&amp;medium12=1&amp;medium13=1&amp;medium1=1&amp;medium14=1&amp;medium2=1\">原盘/DiY</a></li>
+            <li><a href=\"torrents.php?hometeam=1&amp;team19=1&amp;team21=1&amp;team20=1&amp;team22=1&amp;medium3=1\">Remux</a></li>
+            <li><a href=\"torrents.php?hometeam=1&amp;team19=1&amp;team21=1&amp;team20=1&amp;team22=1&amp;medium15=1\">压&nbsp;&nbsp;制</a></li>
+            <li><a href=\"torrents.php?hometeam=1&amp;team19=1&amp;team21=1&amp;team20=1&amp;team22=1&amp;medium10=1\">WEBDL</a></li>
+            <li><a href=\"torrents.php?hometeam=1&amp;team19=1&amp;team21=1&amp;team20=1&amp;team22=1&amp;medium5=1\">HDTV</a></li>
+           </ul>
+           <ul id=\"ddsubmenu3\" class=\"ddsubmenustyle\">
+            <li><a href=\"live.php?cat=507\">有声书</a></li>
+            <li><a href=\"live.php?cat=508\">电子书</a></li>
+           </ul>
+           <ul id=\"ddsubmenu4\" class=\"ddsubmenustyle\">
+            <li><a href=\"upload.php\">发布综合</a></li>
+            <li><a href=\"upload_music.php\">音乐专辑</a></li>
+           </ul> 
+           <ul id=\"ddsubmenu5\" class=\"ddsubmenustyle\"> 
+            <li><a href=\"torrents.php?tag=yzj&amp;showmusic=yes\">音乐专辑</a></li> 
+            <li><a href=\"torrents.php?tag=mv&amp;showmusic=yes\"> M V</a></li> 
+            <li><a href=\"torrents.php?tag=concert&amp;showmusic=yes\">演唱会</a></li> 
+            <!-- <li><a href=torrents.php?tag=ok&showmusic=yes>卡拉OK</a></li>--> 
+            <li><a href=\"torrents.php?tag=live&amp;showmusic=yes\">现场LIVE</a></li> 
+           </ul>
+	
+	
+	</div>");	//查看种子菜单（需要增加）
 
 	if ($CURUSER){
 		if ($where_tweak == 'yes')
@@ -2240,12 +2313,43 @@ $cssupdatedate=($cssupdatedate ? "?".htmlspecialchars($cssupdatedate) : "");
 <title><?php echo $title?></title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="search" type="application/opensearchdescription+xml" title="<?php echo $SITENAME?> Torrents" href="opensearch.php" />
+
 <link rel="stylesheet" href="<?php echo get_font_css_uri().$cssupdatedate?>" type="text/css" />
 <link rel="stylesheet" href="styles/sprites.css<?php echo $cssupdatedate?>" type="text/css" />
 <link rel="stylesheet" href="<?php echo get_forum_pic_folder()."/forumsprites.css".$cssupdatedate?>" type="text/css" />
 <link rel="stylesheet" href="<?php echo $css_uri."theme.css".$cssupdatedate?>" type="text/css" />
 <link rel="stylesheet" href="<?php echo $css_uri."DomTT.css".$cssupdatedate?>" type="text/css" />
 <link rel="stylesheet" href="styles/curtain_imageresizer.css<?php echo $cssupdatedate?>" type="text/css" />
+
+<link rel="stylesheet" href="https://pthome.net/styles/ddlevelsmenu-base.css?20201229" type="text/css"/>
+<link rel="stylesheet" href="https://pthome.net/styles/dragon.css?20201229" type="text/css"/>
+<link rel="stylesheet" href="https://pthome.net/styles/FA/css/all.min.css?20201229" type="text/css"/>
+<link rel="stylesheet" href="https://pthome.net/template/css/torrents.css?20201229" type="text/css"/>
+        <style type="text/css">
+            span.tags {color: #fff;text-align: center;margin: 1px;padding: 1px 3px;height: 16px; }
+            /*"gf","gy","yy","zz","jz",'xz','diy','sf','yq','m0','yc','gz','db','hdr10','hdrm'*/
+            span.tgf {background: #06c;}
+            span.tyc {background: #085;}
+            span.tgz {background: #530;}
+            span.tdb {background: #358;}
+            span.thdr10 {background: #9a3;}
+            span.thdrm {background: #9b5;}
+            span.tgy {background: #f96;}
+            span.tyy {background: #f66;}
+            span.tzz {background: #9c0;}
+            span.tjz {background: #903;}
+            span.txz {background: #c03;}
+            span.tdiy {background: #993;}
+            span.tsf { background: #339;}
+            span.tyq {background: #f90;}
+            span.tm0 {background: #096;}
+            span.ok {background: #ff3f33;}
+            span.mv {background: turquoise;}
+            span.live {background: #ff46ed;}
+            span.ych {background: #3b64ff;}
+            span.yyzj {background: #87007e;}
+            span.log { background: #ff9900;text-shadow: .2rem 0rem .5rem red,-.2rem 0rem .5rem red,0rem .2rem .5rem red,0rem -.2rem .5rem red;}
+        </style>
 <?php
 if ($CURUSER){
 	$caticonrow = get_category_icon_row($CURUSER['caticon']);
@@ -2266,8 +2370,34 @@ if ($CURUSER){
 <script type="text/javascript" src="domTT.js<?php echo $cssupdatedate?>"></script>
 <script type="text/javascript" src="domTT_drag.js<?php echo $cssupdatedate?>"></script>
 <script type="text/javascript" src="fadomatic.js<?php echo $cssupdatedate?>"></script>
+
+<script type="text/javascript" src="https://pthome.net/js/ddlevelsmenu.js?20201229"></script>
+<script type="text/javascript" src="https://pthome.net/js/layer/layer.js?20201229"></script>
+        <script type="text/javascript">
+            ddlevelsmenu.setup("nav", "topbar");
+        </script><!--- 回到顶部js --->
+        <style type="text/css">body {
+                overflow-y: scroll;
+            }</style>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(window).scroll(function () {
+                    if ($(window).scrollTop() > 200) {
+                        $("#roll_top").fadeIn(1000);
+                    } else {
+                        $("#roll_top").fadeOut(1000);
+                    }
+                });
+                $("#roll_top").click(function () {
+                    $('body,html').animate({scrollTop: 0}, 500);
+                    preventDefault();
+                });
+            });
+        </script> <!--- 回到顶部js --->
 </head>
+
 <body>
+    <div title="回到顶部" id="roll_top" style="display:none;zoom:1;opacity: 0.8;height:62px;width:62px;right:15px;position: fixed;top: 90%;background:url(pic/top.gif) 0 0 no-repeat;cursor:pointer;"></div> <!---回到顶部--->
 <table class="head" cellspacing="0" cellpadding="0" align="center">
 	<tr>
 		<td class="clear">
@@ -2401,13 +2531,15 @@ else {
 	</span></td>
 	</tr></table></td>
 </tr></table>
+
 </td></tr>
+
 <tr><td id="outer" align="center" class="outer" style="padding-top: 20px; padding-bottom: 20px">
 <div class="single-top-html"><style>#nr{font-size:20px;margin:0;background:-webkit-linear-gradient(left,#fff,#f00 6.25%,#ff7d00 12.5%,#ff0 18.75%,#0f0 25%,#0ff 31.25%,#00f 37.5%,#f0f 43.75%,#ff0 50%,#f00 56.25%,#ff7d00 62.5%,#ff0 68.75%,#0f0 75%,#0ff 81.25%,#00f 87.5%,#f0f 93.75%,#ff0 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-size:200% 100%;animation:masked-animation 2s infinite linear}@keyframes masked-animation{0%{background-position:0 0}100%{background-position:-100%,0}}</style><div style="background-color:#333;border-radius:25px;box-shadow:0px 0px 5px #f200ff;padding:5px;margin-top:10px;margin-bottom:0px;"><marquee><b id="nr">公告：欢迎来到1PTBA！本站资源全部非盈利下载，请保持了良好的分享率，一旦低于0.2将被禁用（vip例外） 长期招募字幕组，压制人员及diy爱好者,发布员 </b></marquee></div></div>
 <div align="center" style="margin-bottom: 10px" id="ad_belownav"><font size="4"><span style="color: DarkRed;"><b><a href="adredir.php?id=47&amp;url=https%3A%2F%2Ft.me%2F" target="_blank">电报TG群: https://t.me/</a></b><b> Q群：939289463</b></font><br />
 <br />
- <font size="5"><b><a href="adredir.php?id=47&amp;url=forums.php%3Faction%3Dviewforum%26amp%3Bforumid%3D5" target="_blank">招募字幕制作，原盘DIY制作！</a></b></span></font><br />
- <font size="5"><b>本站三个月不登录将封禁，魔力值可通过做种获得，我为人人，人人为我。</b></font><br />
+ <font size="4"><b><a href="adredir.php?id=47&amp;url=forums.php%3Faction%3Dviewforum%26amp%3Bforumid%3D5" target="_blank">招募字幕制作，原盘DIY制作！</a></b></span></font><br />
+ <font size="4"><b>本站三个月不登录将封禁，魔力值可通过做种获得，我为人人，人人为我。</b></font><br />
  <!--- <font size="4"><span style="color: Red;"><b>本站禁发影视版权保护热播剧《庆余年》</b></span></font><br /> --->
 <font size="3"><span style="color: Red;"><b><a href="forums.php?action=viewtopic&topicid=4726">1PTBA种下载规则和带H&R标记的种子说明</a></b></span></font>
  </div>
@@ -3275,14 +3407,14 @@ while ($row = mysql_fetch_assoc($res))
 				else
 					$lastcomtime = $lang_functions['text_blank'].gettime($lastcom["added"],true,false,true);
 					$lastcom_tooltip[$counter]['id'] = "lastcom_" . $counter;
-					$lastcom_tooltip[$counter]['content'] = ($hasnewcom ? "<b>(<font class='new'>".$lang_functions['text_new_uppercase']."</font>)</b> " : "").$lang_functions['text_last_commented_by'].get_username($lastcom['user']) . $lastcomtime."<br />". format_comment(mb_substr($lastcom['text'],0,100,"UTF-8") . (mb_strlen($lastcom['text'],"UTF-8") > 100 ? " ......" : "" ),true,false,false,true,600,false,false);
+					$lastcom_tooltip[$counter]['content'] = ($hasnewcom ? "<b>(<font class='new'>".$lang_functions['text_new_uppercase']."</font>)</b> " : "<!--- 新种标记2 --->").$lang_functions['text_last_commented_by'].get_username($lastcom['user']) . $lastcomtime."<br />". format_comment(mb_substr($lastcom['text'],0,100,"UTF-8") . (mb_strlen($lastcom['text'],"UTF-8") > 100 ? " ......" : "" ),true,false,false,true,600,false,false);
 					$onmouseover = "onmouseover=\"domTT_activate(this, event, 'content', document.getElementById('" . $lastcom_tooltip[$counter]['id'] . "'), 'trail', false, 'delay', 500,'lifetime',3000,'fade','both','styleClass','niceTitle','fadeMax', 87,'maxWidth', 400);\"";
 			}
 		} else {
 			$hasnewcom = false;
 			$onmouseover = "";
 		}
-		print("<b><a href=\"details.php?id=".$id."&amp;hit=1&amp;cmtpage=1#startcomments\" ".$onmouseover.">". ($hasnewcom ? "<font class='new'>" : ""). $row["comments"] .($hasnewcom ? "</font>" : ""). "</a></b>");
+		print("<b><a href=\"details.php?id=".$id."&amp;hit=1&amp;cmtpage=1#startcomments\" ".$onmouseover.">". ($hasnewcom ? "<font class='new'>" : "<!--- 新种标记3 --->"). $row["comments"] .($hasnewcom ? "</font>" : ""). "</a></b>");
 	}
 
 	print("</td>");
