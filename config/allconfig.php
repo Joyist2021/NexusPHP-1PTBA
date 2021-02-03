@@ -1,5 +1,6 @@
 <?php
-$ACCOUNT=array(	'neverdelete' => '1',
+$ACCOUNT=array(
+	'neverdelete' => '1',
 	'neverdeletepacked' => '1',
 	'deletepacked' => '0',
 	'deleteunpacked' => '0',
@@ -48,7 +49,8 @@ $ACCOUNT=array(	'neverdelete' => '1',
 	'nmdl' => '8192',
 	'nmprratio' => '5.50',
 	'nmderatio' => '5.40',
-	'getInvitesByPromotion' => array(		'2' => '0',
+	'getInvitesByPromotion' => array(
+		'2' => '0',
 		'3' => '0',
 		'4' => '0',
 		'5' => '1',
@@ -58,7 +60,8 @@ $ACCOUNT=array(	'neverdelete' => '1',
 		'9' => '1',
 	),
 );
-$ADVERTISEMENT=array(	'enablead' => 'yes',
+$ADVERTISEMENT=array(
+	'enablead' => 'yes',
 	'enablenoad' => 'yes',
 	'noad' => '12',
 	'enablebonusnoad' => 'yes',
@@ -67,7 +70,8 @@ $ADVERTISEMENT=array(	'enablead' => 'yes',
 	'bonusnoadtime' => '15',
 	'adclickbonus' => '20',
 );
-$ATTACHMENT=array(	'enableattach' => 'no',
+$ATTACHMENT=array(
+	'enableattach' => 'no',
 	'classone' => '1',
 	'countone' => '5',
 	'sizeone' => '256',
@@ -98,7 +102,8 @@ $ATTACHMENT=array(	'enableattach' => 'no',
 	'altthumbwidth' => '180',
 	'altthumbheight' => '135',
 );
-$AUTHORITY=array(	'defaultclass' => '1',
+$AUTHORITY=array(
+	'defaultclass' => '1',
 	'staffmem' => '13',
 	'newsmanage' => '13',
 	'newfunitem' => '1',
@@ -145,7 +150,8 @@ $AUTHORITY=array(	'defaultclass' => '1',
 	'userbar' => '2',
 	'access_secondary_zone' => '1',
 );
-$BASIC=array(	'SITENAME' => '1PTBA,壹PT吧',
+$BASIC=array(
+	'SITENAME' => '1PTBA,壹PT吧',
 	'BASEURL' => '1ptba.com',
 	'announce_url' => '1ptba.com/announce.php',
 	'mysql_host' => 'localhost',
@@ -153,7 +159,8 @@ $BASIC=array(	'SITENAME' => '1PTBA,壹PT吧',
 	'mysql_pass' => '3SasaF4dz3rGb3Y3',
 	'mysql_db' => 'sql_1ptba_com',
 );
-$BONUS=array(	'donortimes' => '2',
+$BONUS=array(
+	'donortimes' => '2',
 	'perseeding' => '1',
 	'maxseeding' => '300',
 	'tzero' => '4',
@@ -190,7 +197,8 @@ $BONUS=array(	'donortimes' => '2',
 	'attendance_initial' => '20',
 	'attendance_step' => '2',
 	'attendance_max' => '50',
-	'attendance_continuous' => array(		'10' => '10',
+	'attendance_continuous' => array(
+		'10' => '10',
 		'20' => '20',
 		'30' => '30',
 		'40' => '40',
@@ -204,12 +212,14 @@ $BONUS=array(	'donortimes' => '2',
 		'200' => '50',
 	),
 );
-$CODE=array(	'mainversion' => 'NexusPHP',
+$CODE=array(
+	'mainversion' => 'NexusPHP',
 	'subversion' => 'Standard v1.5 Beta 4',
 	'releasedate' => '2010-09-19',
 	'website' => '<a href="http://1ptba.com">http://1ptba.com</a>',
 );
-$MAIN=array(	'site_online' => 'yes',
+$MAIN=array(
+	'site_online' => 'yes',
 	'max_torrent_size' => '20971520',
 	'announce_interval' => '1800',
 	'annintertwoage' => '7',
@@ -281,8 +291,9 @@ $MAIN=array(	'site_online' => 'yes',
 	'logo' => '/pic/logo.png',
 	'secondary_name' => 'ＬＩＶＥ',
 );
-$SECURITY=array(	'securelogin' => 'yes',
-	'securetracker' => 'yes',
+$SECURITY=array(
+	'securelogin' => 'op',
+	'securetracker' => 'op',
 	'https_announce_url' => '',
 	'iv' => 'no',
 	'maxip' => '2',
@@ -291,13 +302,15 @@ $SECURITY=array(	'securelogin' => 'yes',
 	'cheaterdet' => '2',
 	'nodetect' => '9',
 );
-$SMTP=array(	'smtptype' => 'advanced',
+$SMTP=array(
+	'smtptype' => 'advanced',
 	'emailnotify' => 'yes',
 	'smtp_host' => 'localhost',
 	'smtp_port' => '25',
 	'smtp_from' => NULL,
 );
-$TORRENT=array(	'prorules' => 'yes',
+$TORRENT=array(
+	'prorules' => 'yes',
 	'randomhalfleech' => '35',
 	'randomfree' => '25',
 	'randomtwoup' => '35',
@@ -333,7 +346,8 @@ $TORRENT=array(	'prorules' => 'yes',
 	'choose_userclass_hnr' => '12',
 	'bypass_userclass_hnr' => '10',
 );
-$TWEAK=array(	'where' => 'yes',
+$TWEAK=array(
+	'where' => 'yes',
 	'iplog1' => 'yes',
 	'bonus' => 'enable',
 	'datefounded' => '2019-10-01',
@@ -348,7 +362,8 @@ $TWEAK=array(	'where' => 'yes',
 	'prolinkimg' => 'pic/prolink.png',
 	'analyticscode' => '',
 );
-$EXAM=array(	'enabled' => false,
+$EXAM=array(
+	'enabled' => false,
 	'deadline' => '30',
 	'upload' => '20',
 	'download' => '15',
