@@ -2371,8 +2371,9 @@ if ($CURUSER){
 <script type="text/javascript" src="domTT_drag.js<?php echo $cssupdatedate?>"></script>
 <script type="text/javascript" src="fadomatic.js<?php echo $cssupdatedate?>"></script>
 
-<script type="text/javascript" src="https://pthome.net/js/ddlevelsmenu.js?20201229"></script>
-<script type="text/javascript" src="https://pthome.net/js/layer/layer.js?20201229"></script>
+<script type="text/javascript" src="https://pthome.net/js/ddlevelsmenu.js<?php echo $cssupdatedate?>"></script>
+<script type="text/javascript" src="https://pthome.net/js/layer/layer.js<?php echo $cssupdatedate?>"></script>
+<script type="text/javascript" src="plugin/MyMouse/js/mymouse.js<?php echo $cssupdatedate?>" id="mymouse"></script>
         <script type="text/javascript">
             ddlevelsmenu.setup("nav", "topbar");
         </script><!--- 回到顶部js --->
