@@ -2,7 +2,9 @@
 
 [![license][license-img]][github] [![web][web-img]][web] [![github][github-img]][github]
 
-A modern HTTP web server index for Apache httpd, lighttpd, and nginx.
+[![codecov](https://codecov.io/gh/tgbot-collection/YYeTsBot/branch/master/graph/badge.svg?token=ZL1GCIF95D)](https://github.com/Joyist2021/NexusPHP-1PTBA)
+
+**⚠️⚠️A modern HTTP web server index for Apache httpd, lighttpd, and nginx.
 
 
 ## Important
@@ -28,6 +30,23 @@ forked from cdwolfling/NexusPHP
 
 add config/allconfig.php to ignorelist, you can get it back from https://github.com/cdwolfling/NexusPHP/commit/0f3742a86c8afae4c2a7f9ccd1549c877120a606
 
+
+# 支持我
+
+觉得本项目对你有帮助？你可以通过以下方式表达你的感受：
+
+* 感谢字幕组
+* 点一个star🌟和fork🍴
+* 宣传，使用，提交问题报告
+* 收藏[网站](https://1ptba.com/)
+* [Telegram Channel](https://t.me/1ptba)
+* 捐助我，[给我买杯咖啡？](https://1ptba.com/donate.php)
+* 捐助我，[爱发电？](https://1ptba.com/donate.php)
+
+# 感谢
+[Thanks](THANKS.md)
+
+[MIT](LICENSE)
 ## License
 
 The MIT License (MIT)
