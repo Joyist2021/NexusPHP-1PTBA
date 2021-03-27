@@ -43,6 +43,27 @@ add config/allconfig.php to ignorelist, you can get it back from https://github.
 - [ ] Move sign in to top
 - [x] Auto hide empty donate string
 
+主要程序的目录结构为:
+```
+├── NexusPHP-1PTBA
+    ├── attachments    # 上传截图
+    ├── bitbucket      # 上传用户头像
+    ├── config
+        └── allconfig.php         # 配置
+    ├── include
+        ├── functions.php     # 全局函数
+        └── cleanup.php       # 清理脚本
+    ├── lang          # 语言
+    ├── subs          # 字幕文件
+    ├── torrents      # 种子储存目录
+    ├── docleanup.php     # 清理
+    ├── forums.php      # 论坛
+    ├── invite.php      # 邀请
+    ├── shoutbox.php    # 消息框
+    ├── usercp.php      # 用户控制面板
+    ├── upload.php      # 发布
+    ......
+```
 
 # 支持我
 
