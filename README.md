@@ -78,7 +78,7 @@ add config/allconfig.php to ignorelist, you can get it back from https://github.
 * 捐助我，[爱发电？](https://1ptba.com/donate.php)
 
 # 感谢
-[Thanks](THANKS.md)
+[Thanks](thanks.php)
 
 [MIT](LICENSE)
 ## License
