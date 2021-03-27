@@ -30,7 +30,7 @@ forked from cdwolfling/NexusPHP
 
 add config/allconfig.php to ignorelist, you can get it back from https://github.com/cdwolfling/NexusPHP/commit/0f3742a86c8afae4c2a7f9ccd1549c877120a606
 
-### TODO List
+## TODO List
 - [ ] Enhance progress bar
   - [x] Add progress bar
   - [ ] Show seed or leech detail in progress bar
@@ -43,7 +43,7 @@ add config/allconfig.php to ignorelist, you can get it back from https://github.
 - [ ] Move sign in to top
 - [x] Auto hide empty donate string
 
-主要程序的目录结构为:
+## 主要文件目录结构:
 ```
 ├── NexusPHP-1PTBA
     ├── attachments    # 上传截图
