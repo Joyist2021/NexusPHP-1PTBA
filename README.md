@@ -30,7 +30,7 @@ add config/allconfig.php to ignorelist, you can get it back from https://github.
 
 The MIT License (MIT)
 
-Copyright (c) 2020 Lars Jung (1PTBA)
+Copyright (c) 2020 (1PTBA)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
