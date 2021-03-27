@@ -61,5 +61,5 @@ THE SOFTWARE.
 [material-design-icons]: https://github.com/google/material-design-icons
 
 [license-img]: https://img.shields.io/badge/license-MIT-a0a060.svg?style=flat-square
-[web-img]: https://img.shields.io/badge/web-larsjung.de/h5ai-a0a060.svg?style=flat-square
-[github-img]: https://img.shields.io/badge/github-lrsjng/h5ai-a0a060.svg?style=flat-square
+[web-img]: https://img.shields.io/badge/web-1ptba.com-a0a060.svg?style=flat-square
+[github-img]: https://img.shields.io/badge/github-Joyist2021/NexusPHP-1PTBA-a0a060.svg?style=flat-square
