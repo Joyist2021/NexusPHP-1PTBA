@@ -25,6 +25,7 @@ Read the RELEASENOTE file about this release.
 Visit http://www.nexusphp.com for more information about this project.
 
 forked from cdwolfling/NexusPHP
+
 add config/allconfig.php to ignorelist, you can get it back from https://github.com/cdwolfling/NexusPHP/commit/0f3742a86c8afae4c2a7f9ccd1549c877120a606
 
 ## License
