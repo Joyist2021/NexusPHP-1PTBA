@@ -62,4 +62,4 @@ THE SOFTWARE.
 
 [license-img]: https://img.shields.io/badge/license-MIT-a0a060.svg?style=flat-square
 [web-img]: https://img.shields.io/badge/web-1ptba.com-a0a060.svg?style=flat-square
-[github-img]: https://img.shields.io/badge/github-Joyist2021/NexusPHP-1PTBA-a0a060.svg?style=flat-square
+[github-img]: https://img.shields.io/badge/github-Joyist2021/NexusPHP-a0a060.svg?style=flat-square
