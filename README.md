@@ -69,7 +69,7 @@ add config/allconfig.php to ignorelist, you can get it back from https://github.
 
 觉得本项目对你有帮助？你可以通过以下方式表达你的感受：
 
-* 感谢字幕组
+* 感谢
 * 点一个star🌟和fork🍴
 * 宣传，使用，提交问题报告
 * 收藏[网站](https://1ptba.com/)
